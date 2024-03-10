@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <div class="webrtc">
+        <section class="call-details">
+            <button id="call" class="call-btn">Call</button>
+            <button id="hangup" class="call-btn">Hangup</button>
+        </section>
+
+        <section class="video-details">
+            <video id="my-video" class="video-player" autoplay playsinline></video>
+            <video id="remote-video" class="video-player" autoplay playsinline></video>
+        </section>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="script.js"></script>
+    <script src="socketListeners.js"></script>
+</body>
+</html>
